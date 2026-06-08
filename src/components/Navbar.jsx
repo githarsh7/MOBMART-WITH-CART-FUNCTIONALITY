@@ -44,6 +44,16 @@ const Navbar = ({ search, setSearch, darkMode, setDarkMode }) => {
         </div>
 
       </div>
+
+      <div className="mobile-search-bar">
+        <input
+          type="text"
+          className="mobile-search-input"
+          placeholder="🔍  Search for products..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
     </header>
   );
 };
